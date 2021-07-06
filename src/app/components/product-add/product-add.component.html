@@ -1,0 +1,73 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Ürün ekle</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="productAddForm">
+          <div class="mb-3 row">
+            <label for="productName" class="col-sm-2 col-form-label">
+              Ürün Adı
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                id="productName"
+                class="form-control"
+                formControlName="productName"
+                placeholder="Ürün Adı"
+              />
+            </div>
+          </div>
+         <div class="mb-3 row">
+            <label for="categoryId" class="col-sm-2 col-form-label">
+              Kategori
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                id="categoryId"
+                class="form-control"
+                formControlName="categoryId"
+                placeholder="Kategori"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="unitsInStock" class="col-sm-2 col-form-label">
+              Stok Adedi
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                id="unitsInStock"
+                class="form-control"
+                formControlName="unitsInStock"
+                placeholder="Stok Adedi"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="unitPrice" class="col-sm-2 col-form-label">
+             Fiyatı
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="number"
+                id="unitPrice"
+                class="form-control"
+                formControlName="unitPrice"
+                placeholder="Fiyatı"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+      </div>
+    </div>
+  </div>
+</div>
+

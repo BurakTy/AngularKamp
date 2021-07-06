@@ -1,0 +1,17 @@
+<div class="spinner-border" role="status" *ngIf="dataLoaded==false">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  
+  <table class="table" *ngIf="dataLoaded==true">
+    <thead>
+      <tr>
+        <th>Todo Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos">
+        <td>{{ todo.title }}</td>
+       
+      </tr>
+    </tbody>
+  </table>
